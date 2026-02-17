@@ -1,0 +1,25 @@
+/* Jason Greathouse */
+/* Lab 8 */
+
+/* ChelseaFC color scheme: Blue, White, Gold, Red */
+
+.wrapper {
+    background-color: white;
+    font-family: sans-serif;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 2em;
+}
+
+body {
+    background-image: url(images/chatgpt_background.png);
+    background-position-x: left;
+}
+

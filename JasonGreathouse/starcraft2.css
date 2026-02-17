@@ -1,0 +1,201 @@
+/* Jason Greathouse */
+/* Lab 9 */
+
+.wrapper, header, nav {
+    background-color: black;
+    margin: 3%;
+    text-align: center;
+    color: rgb(0, 172, 0);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    color: rgb(0, 172, 0);
+    padding-top: 2em;
+    font-weight: bold;
+}
+
+.headerImg {
+    width: 200px;
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.headerImg:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+}
+
+.headerfont {
+    font-family: 'orbitron';
+}
+
+body {
+    background-image: url(images/starsbackground2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.factionlogo {
+    height: 150px;
+    object-fit: contain;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.factionlogo:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+}
+
+.factionChar {
+    height: 200px;
+    object-fit: contain;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.factionChar:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+}
+
+.factionHero {
+    max-width: 250px;
+    margin: 0 auto 2em auto;
+    text-align: center;
+    position: relative;
+}
+
+.factionHero .bars {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.factionHero:hover .bars {
+    opacity: 1;
+}
+
+.health-bar,
+.energy-bar,
+.mana-bar,
+.shield-bar {
+    height: 12px;
+    width: 100%;
+    border-radius: 6px;
+    margin: 0.3em 0;
+}
+
+.terran .health-bar {
+    background-color: #00ff00;
+}
+
+.terran .energy-bar {
+    background-color: #660166;
+}
+
+.zerg .health-bar {
+    background-color: #00ff00;
+}
+
+.zerg .mana-bar {
+    background-color: #3399ff;
+}
+
+.protoss .shield-bar {
+    background-color: #3399ff;
+}
+
+.protoss .health-bar {
+    background-color: #00ff00;
+}
+
+/* Base orbit icon style */
+.orbit {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0.9;
+}
+
+/* Orbit container to center icons around the hero */
+.orbit-container {
+    position: absolute;
+    top: 5em;
+    left: 7em;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 2;
+    display: none;
+}
+
+/* Orbit animation keyframes */
+@keyframes orbitClockwise {
+    0%   { transform: rotate(0deg) translateX(60px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
+}
+
+@keyframes orbitCounter {
+    0%   { transform: rotate(180deg) translateX(60px) rotate(-180deg); }
+    100% { transform: rotate(540deg) translateX(60px) rotate(-540deg); }
+}
+
+/* Activate animation */
+.orbit-container.animate {
+    display: block;
+}
+
+.orbit-container.animate .orbit1 {
+    animation: orbitClockwise 2s linear infinite;
+}
+
+.orbit-container.animate .orbit2 {
+    animation: orbitCounter 2s linear infinite;
+}
+
+
+/*Original Theme */
+.original-theme .wrapper,
+.original-theme header,
+.original-theme nav {
+    background-color: black;
+    color: rgb(0, 172, 0);
+    font-family: 'orbitron';
+    font-size: 18px;
+}
+
+/* Terran Theme */
+.terran-theme .wrapper,
+.terran-theme header,
+.terran-theme nav {
+    background-color: #001f3f;
+    color:#ffffff;
+    font-family: 'Iceberg';
+    font-size: 22px;
+}
+
+/* Zerg theme */
+.zerg-theme .wrapper,
+.zerg-theme header,
+.zerg-theme nav {
+    background-color: #2c003e;
+    color: #e0b3ff;
+    font-family: 'Eater';
+    font-size: 18px;
+}
+
+/*Protoss theme */
+.protoss-theme .wrapper,
+.protoss-theme header,
+.protoss-theme nav {
+    background-color: #1a1a40;
+    color: #ffecb3;
+    font-family: 'silkscreen';
+    font-size: 18px;
+}

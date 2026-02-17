@@ -1,0 +1,128 @@
+<!-- Jason Greathouse-->
+<!-- Lab8 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link href="style.css" rel="stylesheet">
+
+<!-- Thank you message to Donor! -->
+    <script> 
+        function thankDonor(){
+            const firstName = document.getElementById("fname").value || "Friend";
+            alert(`Thank you, ${firstName}! Your donation is greatly appreciated.`);
+        }
+    </script>
+    </head>
+    <body>
+
+        <nav class="w3-top">
+            <!-- <ul class="navMenu">
+                <li class="navList"><a class="active" href="index.html">Home</a></li>
+                <li class="navList"><a href="resume.html">Resume</a></li>
+                <li class="navList"><a href="Interests.html">Interests</a></li>
+                <li class="navList"><a href="about.html">About</a></li>
+                <li class="navList"><a href="donate.html">Donate</a></li>
+            </ul> -->
+
+                <div class="w3-bar w3-grey">
+                    <a class="w3-bar-item w3-button w3-crimson" href="index.html">Home</a>
+                    <a class="w3-bar-item w3-button" href="Interests.html">Interests</a>
+                    <a class="w3-bar-item w3-button" href="donate.html">Donate</a>
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button">About</button>
+                            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                                <a class="w3-bar-item w3-button" href="about.html">About</a>
+                                <a class="w3-bar-item w3-button" href="resume.html">Resume</a>
+                            </div> <!-- dropdown content -->
+                    </div> <!-- dropdown div -->
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button">Sites</button>
+                            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                                <a href="chelseafc.html" class="w3-bar-item w3-button w3-blue">ChelseaFC</a>
+                                <a href="starcraft2.html" class="w3-bar-item w3-button">StarCraft 2</a>
+                            </div> <!-- dropdown content -->
+                    </div> <!-- dropdown div -->
+                </div> <!-- bar div -->
+            
+        </nav>
+
+        <div class="wrapper">
+        
+        <header>
+            <h2>Jason Greathouse</h2>
+            <h3>Major - Information Technology</h3>
+            <h4>Middle Georgia State University</h4>
+        </header>
+        <hr>
+        
+
+        <main>
+            <h1>Donate</h1>
+            <h3>You can give me money here:</h3>
+
+        <div id="donateForm">
+            <form>
+                <label for="fname">First Name</label>
+                <input class="w3-input" type="text" id="fname">
+                <br>
+                <label for="lname">Last Name</label>
+                <input class="w3-input"  type="text" id="lname">
+                <br>
+                <label for="email">Email</label>
+                <input class="w3-input"  type="email" id="email">
+                <br>
+                <label for="date">Date</label>
+                <input class="w3-input"  type="date" id="date">
+                <br>
+                <label for="phonetype">Phone Type</label>
+                <select class="w3-select" id="phonetype">
+                    <option>Landline</option>
+                    <option>Work</option>
+                    <option>Mobile</option>
+                </select>
+                <br>
+                <label for="phone">Phone</label>
+                <input class="w3-input"  type="text" id="phone" placeholder="478-867-5309" pattern="[0-9] (3) - [0-9] (3) - [0-9] (4)">
+                <br>
+                <label for="amount">Donation</label>
+                <input class="w3-input"  type="number" id="amount" min="0">
+                <br>
+                <label for="cc">Credit Card Number</label>
+                <input class="w3-input"  type="text" id="cc" minlength="15" maxlength="16">
+                <br>
+                <label for="secureCode">Security Code</label>
+                <input class="w3-input"  type="text" id="secureCode" maxlength="3" size="3">
+                <br>
+                <label for="expDate">Expiration Date</label>
+                <input class="w3-input"  type="date" id="expDate">
+                <br>
+                <input class="w3-check" type="checkbox" id="eula">
+                <label for="eula">I Agree to the Terms and Conditions in EULA</label>
+                <br>
+                <br>
+                <button class="button" type="button" onclick="thankDonor()">Submit</button> <!-- added message on button click -->
+            </form>
+        </div>
+
+        </main>
+            <div class="footer">
+                <p>
+                    Jason Greathouse<br>
+                    Contact:<br>
+                    1205 Sardis Lane, Warner Robins, GA, 31088<br>
+                    478-293-8686<br>
+                    Jason.Greathouse@mga.edu<br>
+                    &copy; 2025
+                </p>
+                <footer> <a href="https://www.linkedin.com/in/jason-greathouse-445b201b9/" class = "fa fa-linkedin"> Connect on LinkedIn</a></footer>
+            </div>
+        </div>
+    </body>
+
+</html>
