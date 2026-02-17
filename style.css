@@ -1,0 +1,172 @@
+/* colors -- 8a0000 (red) rgba(128, 128, 128, 0.726) (Grey) 0077b5 (Linkedin-Blue) (White) (Black) */
+
+.wrapper {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.726);
+    /*margin-left: 25%;*/
+    margin-top: 2%;
+}
+
+
+
+body {
+    color: black;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 16px;
+    background-image: url("images/TechWhiteWallpaperr.jpg"); background-size: cover;
+}
+
+.navMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(128, 128, 128, 0.726);
+    width: 24%;
+    float: left;
+}
+
+.navList {
+    display: block;
+    padding: 2em;
+    text-decoration: none;
+}
+
+.navList a.active {
+    background-color: #8a0000;
+    color: white;
+}
+
+.navList a:hover:not(.active){
+    background-color: #8a0000;
+    color: white;
+}
+
+a {
+    color: #0077b5;
+}
+
+#donateForm {
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.button {
+    display: inline-block;
+    font-size: 3vw;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 1vw;
+    box-shadow: 0 .5vw black;
+}
+
+.button:hover {
+    color: white;
+    background-color: #8a0000;
+}
+
+.InterestImg {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/*
+.navList {
+    display: inline;
+    padding-left: 2em;
+}
+
+a:hover {
+    color: crimson;
+}
+*/
+.fa {
+    color: #0077b5;
+}
+.noBullet {
+    list-style-type: none;
+}
+
+#bold-text {
+    font-weight: bold;
+}
+
+.headingLeft {
+    text-align: left;
+    padding-left: 3em;
+}
+
+.headingRight {
+    text-align: right;
+    float: right;
+    padding-right: 3em;
+}
+
+table {
+    clear: right;
+}
+
+th, td {
+    padding-right: 10em;
+    padding-bottom: 1em;
+}
+
+.fa {
+    font-size: 24px !important;
+}
+
+.footer {
+    background-color: rgba(128, 128, 128, 0.726);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-align: center; color: black;
+    border-top: 1px solid white;
+}
+
+@media screen and (max-width: 880px){
+    nav {
+        overflow: hidden;
+        background-color: #0077b5;
+    }
+    .navMenu {
+        clear: left;
+        width: 100%;
+    }
+    .navList {
+        float: left;
+    }
+    .navList a {
+        display: block;
+        text-align: center;
+        padding: 1em;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+    .wrapper {
+        margin-left: 0;
+    }
+}
+
+@media print{
+    nav, .navMenu {
+        display: none;
+    }
+    .wrapper {
+        margin-left: 0;
+    }
+
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#welcome-text {
+    animation: bounce 1s ease-in-out 3;
+}
